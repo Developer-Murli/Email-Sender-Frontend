@@ -119,7 +119,7 @@ function EmailSender(){
 
               <label htmlFor="message" className="block mb-2 mt-4 text-sm font-medium text-gray-900 dark:text-white">Your message</label>
               <Editor
-                    apiKey='wyma813pfxktgclpuotbmgw27aeu87dbg2hha0zswk46jo5m'
+                    apiKey={import.meta.env.VITE_SECRET_KEY}
                       
                     onEditorChange={(event)=> {
                       setEmailData({...emailData,
@@ -147,7 +147,7 @@ function EmailSender(){
                         { value: 'Email', title: 'Email' },
                       ],
                       ai_request: (request, respondWith) => respondWith.string(() => Promise.reject('See docs to implement AI Assistant')),
-                      uploadcare_public_key: '04a042e8e51e28599820',
+                      uploadcare_public_key: import.meta.env.VITE_PUBLIC_KEY,
                     }}
                     initialValue="Welcome to Smart Email Sender!!"
                   />
