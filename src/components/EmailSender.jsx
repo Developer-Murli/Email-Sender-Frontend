@@ -61,7 +61,7 @@ function EmailSender(){
 
   return (
     <div className='w-full min-h-screen dark:bg-gray-900 flex justify-center items-center'>
-       <div className='email_card  w-2xl p-4 rounded border-t-4 border-t-blue-600 shadow-2xl dark:bg-gray-950 bg-white'>
+       <div className='email_card   p-4 rounded border-t-4 mx-8 md:mx-0s  sm:w-full lg:w-2xl  border-t-blue-600 shadow-2xl dark:bg-gray-950 bg-white'>
        <h1 className='text-gray-800 text-2xl dark:text-white mt-3'>Email Sender</h1>
        <p className='text-gray-600'>Send Email to your own Members</p>
        
